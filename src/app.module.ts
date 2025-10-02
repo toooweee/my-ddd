@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
-import { HeroesGameModule } from './heroes-game/heroes-game.module';
+import { TaskModule } from './task/task.module';
 
 @Module({
-  imports: [CqrsModule.forRoot(), HeroesGameModule],
+  imports: [CqrsModule.forRoot(), TaskModule],
 })
 export class AppModule {}

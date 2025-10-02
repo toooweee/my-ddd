@@ -1,5 +1,5 @@
 /* eslint-disable */
 export default async () => {
     const t = {};
-    return { "@nestjs/swagger": { "models": [], "controllers": [[import("./heroes-game/heroes-game.controller"), { "HeroesGameController": { "findAll": {} } }]] } };
+    return { "@nestjs/swagger": { "models": [[import("./task/dto/create-task.dto"), { "CreateTaskDto": { title: { required: true, type: () => String }, description: { required: true, type: () => String } } }]], "controllers": [[import("./task/task.controller"), { "TaskController": { "create": {} } }]] } };
 };
